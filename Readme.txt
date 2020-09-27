@@ -1,1 +1,1 @@
-Final Proeject for Real time systems. 
+Final Project implemented using QNX RTOS
