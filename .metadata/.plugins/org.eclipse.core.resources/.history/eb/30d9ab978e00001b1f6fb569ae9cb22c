@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+
+int main(void) {
+	puts("Hello World!!!"); /* prints Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+
+void main( void )
+{
+	printf("Circular buffer Example\n");
+
+	pthread_t send;
+
+	pthread_create(&th1, NULL, producer_ex, NULL);
+	pthread_join(th1, NULL);
+
+	printf("## main terminating...\n");
+}
+
+void *send(void) {
+int i = 0, tmp = 0;
+int *t = (int*)time;
+while(1)
+{
+if(i>19) break; // no more data to read
+i++;
+sem_wait(&full);
+pthread_mutex_lock(&mutex);
+tmp = buffer[out_ptr];//read data buffer
+out_ptr = (out_ptr + 1) % N;
+count--;
+printf("<--consumer removed: %i", tmp);
+printf(" count=%i\n", count);
+pthread_mutex_unlock(&mutex);
+sem_post(&empty);
+usleep(*t);
+}
+printf("## consumer terminating...\n");
+}

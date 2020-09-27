@@ -1,0 +1,415 @@
+15:15:26 **** Build of configuration x86-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86 -c -Wp,-MMD,build/x86-debug/src/IPC_SEND.d,-MT,build/x86-debug/src/IPC_SEND.o -o build/x86-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+qcc -Vgcc_ntox86 -o build/x86-debug/IPC_SEND   build/x86-debug/src/IPC_SEND.o  
+15:22:04 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+15:22:04 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:24:06 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:24:09 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:24:43 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:24:55 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:24:57 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:27:18 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+15:27:20 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:13:21 **** Build of configuration x86-debug for project IPC_RECEIVE ****
+make -j12 all 
+qcc -Vgcc_ntox86 -c -Wp,-MMD,build/x86-debug/src/IPC_RECEIVE.d,-MT,build/x86-debug/src/IPC_RECEIVE.o -o build/x86-debug/src/IPC_RECEIVE.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_RECEIVE.c
+qcc -Vgcc_ntox86 -o build/x86-debug/IPC_RECEIVE   build/x86-debug/src/IPC_RECEIVE.o  
+16:14:34 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_RECEIVE.d,-MT,build/x86_64-debug/src/IPC_RECEIVE.o -o build/x86_64-debug/src/IPC_RECEIVE.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_RECEIVE.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_RECEIVE   build/x86_64-debug/src/IPC_RECEIVE.o  
+16:14:39 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:29:17 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:29:19 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:04 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:05 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:17 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:18 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:29 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:30 **** Incremental Build of configuration x86_64-debug for project IPC_RECEIVE ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+16:57:43 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c:11:6: warning: 'main' is normally a non-static function [-Wmain]
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:17:18: error: 'th1' undeclared (first use in this function)
+  pthread_create(&th1, NULL, producer_ex, NULL);
+                  ^
+src/IPC_SEND.c:17:18: note: each undeclared identifier is reported only once for each function it appears in
+src/IPC_SEND.c:17:29: error: 'producer_ex' undeclared (first use in this function)
+  pthread_create(&th1, NULL, producer_ex, NULL);
+                             ^
+src/IPC_SEND.c:15:12: warning: unused variable 'send' [-Wunused-variable]
+  pthread_t send;
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+16:58:48 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:17:18: error: 'th1' undeclared (first use in this function)
+  pthread_create(&th1, NULL, producer_ex, NULL);
+                  ^
+src/IPC_SEND.c:17:18: note: each undeclared identifier is reported only once for each function it appears in
+src/IPC_SEND.c:17:29: error: 'producer_ex' undeclared (first use in this function)
+  pthread_create(&th1, NULL, producer_ex, NULL);
+                             ^
+src/IPC_SEND.c:15:12: warning: unused variable 'send' [-Wunused-variable]
+  pthread_t send;
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+16:58:59 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:17:30: error: 'producer_ex' undeclared (first use in this function)
+  pthread_create(&send, NULL, producer_ex, NULL);
+                              ^
+src/IPC_SEND.c:17:30: note: each undeclared identifier is reported only once for each function it appears in
+src/IPC_SEND.c:18:15: error: 'th1' undeclared (first use in this function)
+  pthread_join(th1, NULL);
+               ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+16:59:06 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:17:30: error: 'producer_ex' undeclared (first use in this function)
+  pthread_create(&send, NULL, producer_ex, NULL);
+                              ^
+src/IPC_SEND.c:17:30: note: each undeclared identifier is reported only once for each function it appears in
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+17:00:01 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:17:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:10:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:10:28 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:10:31 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:36:58 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:8:1: warning: implicit declaration of function 'connectAttach' [-Wimplicit-function-declaration]
+ connectAttach();
+ ^
+src/IPC_SEND.c: At top level:
+src/IPC_SEND.c:12:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:18:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+build/x86_64-debug/src/IPC_SEND.o: In function `send':
+C:\Users\claud\Desktop\Traffic_Light_RTOS\IPC_SEND/src/IPC_SEND.c:8: undefined reference to `connectAttach'
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/bin/x86_64-pc-nto-qnx7.0.0-ld caught signal 1
+Makefile:60: recipe for target 'build/x86_64-debug/IPC_SEND' failed
+make: *** [build/x86_64-debug/IPC_SEND] Error 1
+17:37:55 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:8:53: warning: implicit declaration of function 'getpid' [-Wimplicit-function-declaration]
+ printf("I am the central. PID = [%d] PPID = [%d]\n",getpid(),getppid());
+                                                     ^
+src/IPC_SEND.c:8:62: warning: implicit declaration of function 'getppid' [-Wimplicit-function-declaration]
+ printf("I am the central. PID = [%d] PPID = [%d]\n",getpid(),getppid());
+                                                              ^
+src/IPC_SEND.c: At top level:
+src/IPC_SEND.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:19:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:38:19 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:14:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:20:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:38:32 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c:13:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main( void )
+      ^
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:19:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:38:51 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:19:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th1, NULL, send, NULL);
+                             ^
+In file included from src/IPC_SEND.c:3:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:39:08 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:19:34: error: expected expression before ',' token
+  pthread_create(&th1, NULL, send*, NULL);
+                                  ^
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:11:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+17:43:45 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:25:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:44:07 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:44:10 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:44:12 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:44:15 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:44:30 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:8: error: expected expression before 'void'
+ return void;
+        ^
+src/IPC_SEND.c:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+17:44:37 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:51:33 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:18: warning: unused variable 'chid' [-Wunused-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+                  ^
+src/IPC_SEND.c:23:5: warning: variable 'serverPID' set but not used [-Wunused-but-set-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:51:39 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:18: warning: unused variable 'chid' [-Wunused-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+                  ^
+src/IPC_SEND.c:23:5: warning: variable 'serverPID' set but not used [-Wunused-but-set-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+     ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:52:57 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:27:13: error: 'serverpid' undeclared (first use in this function)
+ printf("%i",serverpid);
+             ^
+src/IPC_SEND.c:27:13: note: each undeclared identifier is reported only once for each function it appears in
+src/IPC_SEND.c:23:18: warning: unused variable 'chid' [-Wunused-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+                  ^
+src/IPC_SEND.c:23:5: warning: variable 'serverPID' set but not used [-Wunused-but-set-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+     ^
+cc: C:/Users/claud/qnx700/host/win64/x86_64/usr/lib/gcc/x86_64-pc-nto-qnx7.0.0/5.4.0/cc1 caught signal 1
+Makefile:55: recipe for target 'build/x86_64-debug/src/IPC_SEND.o' failed
+make: *** [build/x86_64-debug/src/IPC_SEND.o] Error 1
+17:53:06 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'send':
+src/IPC_SEND.c:23:18: warning: unused variable 'chid' [-Wunused-variable]
+ int serverPID=0, chid=0;  // Server PID and channel ID
+                  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC_SEND.o  
+17:53:09 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:13 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:14 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:15 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:17 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:18 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+17:53:19 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.

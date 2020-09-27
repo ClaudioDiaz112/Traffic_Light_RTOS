@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+
+
+int main(void) {
+	puts("Hello World!!!"); /* prints Hello World!!! */
+	return EXIT_SUCCESS;
+}
+
+
+void main( void )
+{
+	printf("Circular buffer Example\n");
+
+	pthread_t send;
+
+	pthread_create(&th1, NULL, producer_ex, NULL);
+	pthread_join(th1, NULL);
+
+	printf("## main terminating...\n");
+}
+
+void *send(void) {
+printf("## consumer terminating...\n");
+}
