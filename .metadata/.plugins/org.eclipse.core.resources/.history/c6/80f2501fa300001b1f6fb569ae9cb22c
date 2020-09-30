@@ -1,0 +1,8 @@
+#ifndef IPC_h
+#define IPC_h
+
+void *send(void *data);
+void *recieve(void *data);
+void *uplink(void *data);
+
+#endif

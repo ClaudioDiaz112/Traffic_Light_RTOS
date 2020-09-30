@@ -1,0 +1,33 @@
+#ifndef FIFO_h
+#define FIFO_h
+
+void Write_Server_INFO(int  PID,int CHID){
+
+	 FILE * fp;
+	   /* open the file for writing*/
+	   fp = fopen ("/tmp/myServer.info","w");
+	   fprintf(fp,"%i \n", PID);
+	   fprintf(fp,"%i \n", CHID);
+	   fclose (fp);
+}
+
+void Read_Server_INFO(void){
+
+	int PID = 0;
+	int CHID = 0;
+	FILE * fp = fopen("/tmp/myServer.info", "r");
+	  if(fp == 0) {
+	    perror("fopen");
+	    exit(1);
+	}
+
+	  fscanf(fp,"%i",&PID);
+	  fscanf(fp,"%i",&CHID);
+	  printf("%i\n",PID);
+	  printf("%i\n",CHID);
+	  fclose(fp);
+
+
+}
+
+#endif

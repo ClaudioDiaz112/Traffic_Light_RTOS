@@ -1,0 +1,5 @@
+
+
+void *send(void *data);
+void *recieve(void *data);
+void *uplink(void *data);

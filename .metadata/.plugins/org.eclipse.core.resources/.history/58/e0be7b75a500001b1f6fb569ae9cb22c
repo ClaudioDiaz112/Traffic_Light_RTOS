@@ -1,0 +1,41 @@
+#include <pthread.h>
+#include <signal.h>
+#include <stdio.h>
+#include <sys/neutrino.h>
+#include <stdlib.h>
+#include "fifo.h"
+
+void *send(void *data) {
+	printf("## send terminating...\n");
+
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i", serverPID);
+
+	// Create Channel
+		chid = ChannelCreate(_NTO_CHF_DISCONNECT);
+		if (chid == -1)  // _NTO_CHF_DISCONNECT flag used to allow detach
+		{
+		    printf("\nFailed to create communication channel on server\n");
+			 pthread_exit( EXIT_FAILURE );
+		}
+
+
+	return NULL;
+}
+
+void *recieve(void *data) {
+	printf("## recieve terminating...\n");
+
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i", serverPID);
+
+	return NULL;
+}
+
+

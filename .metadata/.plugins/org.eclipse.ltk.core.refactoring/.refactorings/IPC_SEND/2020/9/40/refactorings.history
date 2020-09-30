@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;IPC_SEND/src/IPC_SEND.h&apos; to &apos;IPC.h&apos;" description="Rename resource &apos;IPC_SEND.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/IPC_SEND.h" name="IPC.h" stamp="1601196979788" updateReferences="true"/>
+</session>

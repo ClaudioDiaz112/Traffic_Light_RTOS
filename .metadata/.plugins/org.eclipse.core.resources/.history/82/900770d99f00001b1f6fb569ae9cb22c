@@ -1,0 +1,14 @@
+#include <pthread.h>
+#include <signal.h>
+#include <stdio.h>
+#include "IPC.h"
+
+nt main( void )
+{
+	pthread_t th1;
+	pthread_create(&th1, NULL, send, NULL);
+	pthread_join(th1, NULL);
+	printf("## main terminating...\n");
+}
+
+

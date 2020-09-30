@@ -1,31 +1,24 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include <pthread.h>
-#include <process.h>
-
-void *send(void *data);
-
+#include <signal.h>
+#include <stdio.h>
+#include "IPC.h"
+void* Test(void);
 int main( void )
 {
-	printf("Circular buffer Example\n");
+	pthread_t th1,th2;
+	pthread_create(&th1, NULL, Server, NULL);
+	pthread_create(&th2, NULL, Test, NULL);
 
-	pthread_t th1;
-
-	pthread_create(&th1, NULL, send, NULL);
-	pthread_join(th1, NULL);
-
+	pthread_join(th2, NULL);
 	printf("## main terminating...\n");
 }
 
-void *send(void *data) {
-printf("## consumer terminating...\n");
-
-int serverPID=0, chid=0; 	// Server PID and channel ID
-
-serverPID = getpid(); 		// get server process ID
-
-printf("%i",serverPID);
-
-
-return NULL;
+void* Test(void){
+	while(1){
+	printf("test to see what is blocked\n");
+	sleep(1);
+	}
 }
+
+
+

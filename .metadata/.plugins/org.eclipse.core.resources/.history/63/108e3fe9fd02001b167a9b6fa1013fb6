@@ -1,0 +1,35 @@
+
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "fifo.h"
+#include"IPC.h"
+#include <sys/dispatch.h>
+
+void *receive(void *data) {
+
+	return NULL;
+}
+
+void *Server(void *data) {
+	printf("_mysigval size= %d\n", sizeof(_mysigval));
+	printf("header size= %d\n", sizeof(msg_header_t));
+	printf("my_data size= %d\n", sizeof(my_data));
+	printf("my_reply size= %d\n", sizeof(my_reply));
+
+   name_attach_t *attach;
+
+   my_data msg;
+    my_reply replymsg; // replymsg structure for sending back to client
+
+    replymsg.hdr.type = 0x01;       // some number to help client process reply msg
+    replymsg.hdr.subtype = 0x00;    // some number to help client process reply msg
+	return NULL;
+}
+
+
+
+
+
+
+

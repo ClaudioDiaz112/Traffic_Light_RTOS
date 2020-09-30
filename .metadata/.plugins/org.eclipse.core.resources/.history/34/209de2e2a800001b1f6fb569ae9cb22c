@@ -1,0 +1,31 @@
+#ifndef FIFO_h
+#define FIFO_h
+
+void Write_Server_INFO(int  PID,int CHID){
+
+	 FILE * fp;
+	   /* open the file for writing*/
+	   fp = fopen ("/tmp/myServer.info","w");
+	   fprintf(fp,"\n", PID);
+	   fprintf(fp,"\n", CHID);
+	   fclose (fp);
+}
+
+void Read_Server_INFO(void){
+
+	fp = fopen("/tmp/myServer.info", "r");
+	  if(fp == 0) {
+	    perror("fopen");
+	    exit(1);
+	}
+	  while (fread(buff, sizeof(int), 2, fp) > 0){
+	    for (int i = 0; i < 1; i++){
+
+	      Fract_Real_Input[i] = (float_to_fract16(buff[i]));
+	    }
+	    fix_fft(Fract_Real_Input,Fract_Complex_Input,9);
+	  }
+	  fclose(fp);
+
+
+#endif

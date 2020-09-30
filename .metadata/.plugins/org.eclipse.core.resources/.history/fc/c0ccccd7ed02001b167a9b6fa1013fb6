@@ -1,0 +1,18 @@
+#include "IPC.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <process.h>
+
+
+void *receive(void *data);
+
+int main( void )
+{
+	pthread_t th1;
+	pthread_create(&th1,NULL, receive , NULL);
+	pthread_join(th1, NULL);
+	printf("## main terminating...\n");
+}
+
+

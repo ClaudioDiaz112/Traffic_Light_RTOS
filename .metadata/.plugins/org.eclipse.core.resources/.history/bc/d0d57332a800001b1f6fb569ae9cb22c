@@ -1,0 +1,33 @@
+#ifndef FIFO_h
+#define FIFO_h
+
+void Write_Server_INFO(int  PID,int CHID){
+
+	 FILE * fp;
+	   /* open the file for writing*/
+	   fp = fopen ("/tmp/myServer.info","w");
+	   fprintf(fp,"\n", PID);
+	   fprintf(fp,"\n", CHID);
+	   fclose (fp);
+}
+
+void Read_Server_INFO(void){
+
+	  FILE* fp = fopen("/tmp/myServer.info", "r");
+	  if (! fp ) // equivalent to saying if ( in_file == NULL )
+	               {
+	                  printf("oops, file can't be read\n");
+	                  exit(-1);
+	               }
+
+	  char line[100];
+	           while ( fgets( line, 100, stdin ) != NULL )
+	             {
+	               fprintf("The line is: %s\n", line);
+	             }
+
+
+	   fclose (fp);
+}
+
+#endif

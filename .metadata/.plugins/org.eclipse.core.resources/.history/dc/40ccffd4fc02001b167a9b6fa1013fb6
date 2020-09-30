@@ -1,0 +1,25 @@
+#include <pthread.h>
+#include <signal.h>
+#include <stdio.h>
+#include <sys/neutrino.h>
+#include <stdlib.h>
+#include "fifo.h"
+#include <process.h>
+#include"IPC.h"
+
+void *receive(void *data) {
+
+	return NULL;
+}
+
+void *Server(void *data) {
+
+	return NULL;
+}
+
+
+
+
+
+
+

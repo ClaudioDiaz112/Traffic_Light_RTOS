@@ -1,0 +1,44 @@
+
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "fifo.h"
+#include"IPC.h"
+#include <sys/dispatch.h>
+
+void *receive(void *data) {
+
+	return NULL;
+}
+
+void *Server(void *data) {
+	printf("_mysigval size= %d\n", sizeof(_mysigval));
+	printf("header size= %d\n", sizeof(msg_header_t));
+	printf("my_data size= %d\n", sizeof(my_data));
+	printf("my_reply size= %d\n", sizeof(my_reply));
+
+   name_attach_t *attach;
+
+   my_data msg;
+    my_reply replymsg; // replymsg structure for sending back to client
+
+    replymsg.hdr.type = 0x01;       // some number to help client process reply msg
+    replymsg.hdr.subtype = 0x00;    // some number to help client process reply msg
+    // Create a global name (/dev/name/local/...)
+       if ((attach = name_attach(NULL, ATTACH_POINT, 0)) == NULL)
+       // Create a global name (/dev/name/global/...)
+       //if ((attach = name_attach(NULL, ATTACH_POINT, NAME_FLAG_ATTACH_GLOBAL)) == NULL)
+       {
+           printf("\nFailed to name_attach on ATTACH_POINT: %s \n", ATTACH_POINT);
+           printf("\n Possibly another server with the same name is already running or you need to start the gns service!\n");
+    	   return EXIT_FAILURE;
+       }
+	return NULL;
+}
+
+
+
+
+
+
+

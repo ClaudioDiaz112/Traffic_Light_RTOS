@@ -1,0 +1,29 @@
+
+#include <signal.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "fifo.h"
+#include"IPC.h"
+#include <sys/dispatch.h>
+
+void *receive(void *data) {
+
+	return NULL;
+}
+
+void *Server(void *data) {
+	printf("_mysigval size= %d\n", sizeof(_mysigval));
+	printf("header size= %d\n", sizeof(msg_header_t));
+	printf("my_data size= %d\n", sizeof(my_data));
+	printf("my_reply size= %d\n", sizeof(my_reply));
+
+   name_attach_t *attach;
+	return NULL;
+}
+
+
+
+
+
+
+

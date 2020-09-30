@@ -1,0 +1,39 @@
+#include <pthread.h>
+#include <signal.h>
+#include <stdio.h>
+
+void *send(void *data) {
+	printf("## consumer terminating...\n");
+
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i", serverPID);
+
+	return NULL;
+}
+
+void *recieve(void *data) {
+	printf("## consumer terminating...\n");
+
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i", serverPID);
+
+	return NULL;
+}
+
+void *uplink(void *data) {
+	printf("## consumer terminating...\n");
+
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i", serverPID);
+
+	return NULL;
+}

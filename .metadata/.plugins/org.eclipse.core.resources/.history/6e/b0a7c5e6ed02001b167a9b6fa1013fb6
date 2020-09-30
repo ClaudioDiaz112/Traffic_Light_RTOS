@@ -1,0 +1,25 @@
+#ifndef IPC_h
+#define IPC_h
+#include <sys/iofunc.h>
+
+#define BUF_SIZE 100
+
+typedef struct
+{
+	struct _pulse hdr;  // Our real data comes after this header
+	int ClientID;       // our data (unique id from client)
+    int data;           // our data
+} my_data;
+
+typedef struct
+{
+	struct _pulse hdr;  // Our real data comes after this header
+    char buf[BUF_SIZE]; // Message we send back to clients to tell them the messages was processed correctly.
+} my_reply;
+
+
+
+void *send(void *data);
+void *recieve(void *data);
+
+#endif

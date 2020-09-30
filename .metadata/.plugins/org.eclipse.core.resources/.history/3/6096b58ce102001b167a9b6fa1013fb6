@@ -1,0 +1,50 @@
+#include <pthread.h>
+#include <signal.h>
+#include <stdio.h>
+#include <sys/neutrino.h>
+#include <stdlib.h>
+#include "fifo.h"
+#include <process.h>
+#include"IPC.h"
+
+void *send(void *data) {
+	int serverPID = 0, chid = 0; 	// Server PID and channel ID
+
+	serverPID = getpid(); 		// get server process ID
+
+	printf("%i\n", serverPID);
+
+	// Create Channel
+		chid = ChannelCreate(_NTO_CHF_DISCONNECT);
+		printf("%i\n",chid);
+		Write_Server_INFO(serverPID,chid);
+		my_data msg;
+		int rcvid=0, msgnum=0;  	// no message received yet
+		int Stay_alive=1, living=0;	// server stays running (ignores _PULSE_CODE_DISCONNECT request)
+
+		my_reply replymsg; 			// replymsg structure for sending back to client
+		replymsg.hdr.type = 0x01;
+		replymsg.hdr.subtype = 0x00;
+
+		living =1;
+			while (living)
+			{
+
+				 // Do your MsgReceive's here now with the chid
+				 rcvid = MsgReceive(chid, &msg, sizeof(msg), NULL);
+				 printf("%d",rcvid);
+				 if (rcvid == -1)  // Error condition, exit
+				 	   {
+				 		   printf("\nFailed to MsgReceive\n");
+				 		   break;
+				 	   }
+				 living =0;
+			}
+
+
+	return NULL;
+}
+
+
+
+
