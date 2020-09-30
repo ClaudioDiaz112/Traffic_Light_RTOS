@@ -3262,3 +3262,50 @@ qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC.
 19:54:49 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
 make -j12 all 
 make: Nothing to be done for 'all'.
+20:13:44 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:11:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th2, NULL, Test, NULL);
+                             ^
+In file included from src/IPC_SEND.c:1:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'Test':
+src/IPC_SEND.c:20:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  sleep(1);
+  ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC.o build/x86_64-debug/src/IPC_SEND.o  
+20:14:49 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.
+20:19:34 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC_SEND.d,-MT,build/x86_64-debug/src/IPC_SEND.o -o build/x86_64-debug/src/IPC_SEND.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC_SEND.c
+qcc -Vgcc_ntox86_64 -c -Wp,-MMD,build/x86_64-debug/src/IPC.d,-MT,build/x86_64-debug/src/IPC.o -o build/x86_64-debug/src/IPC.o  -Wall -fmessage-length=0 -g -O0 -fno-builtin  src/IPC.c
+src/IPC_SEND.c: In function 'main':
+src/IPC_SEND.c:11:29: warning: passing argument 3 of 'pthread_create' from incompatible pointer type [-Wincompatible-pointer-types]
+  pthread_create(&th2, NULL, Test, NULL);
+                             ^
+In file included from src/IPC_SEND.c:1:0:
+C:/Users/claud/qnx700/target/qnx7/usr/include/pthread.h:210:12: note: expected 'void * (*)(void *)' but argument is of type 'void * (*)(void)'
+ extern int pthread_create(pthread_t *__thr, const pthread_attr_t *__attr, void *(*__start_routine)(void *), void *__arg);
+            ^
+src/IPC_SEND.c: In function 'Test':
+src/IPC_SEND.c:20:2: warning: implicit declaration of function 'sleep' [-Wimplicit-function-declaration]
+  sleep(1);
+  ^
+src/IPC.c: In function 'Client':
+src/IPC.c:26:16: warning: return makes pointer from integer without a cast [-Wint-conversion]
+         return EXIT_FAILURE;
+                ^
+src/IPC.c: In function 'Server':
+src/IPC.c:82:13: warning: return makes pointer from integer without a cast [-Wint-conversion]
+      return EXIT_FAILURE;
+             ^
+qcc -Vgcc_ntox86_64 -o build/x86_64-debug/IPC_SEND   build/x86_64-debug/src/IPC.o build/x86_64-debug/src/IPC_SEND.o  
+20:24:07 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+make -j12 all 
+make: Nothing to be done for 'all'.

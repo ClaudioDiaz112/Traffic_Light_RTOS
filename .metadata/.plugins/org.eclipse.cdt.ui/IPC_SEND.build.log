@@ -1,6 +1,6 @@
-19:54:49 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
+20:24:07 **** Incremental Build of configuration x86_64-debug for project IPC_SEND ****
 make -j12 all 
 make: Nothing to be done for 'all'.
 
-19:54:49 Build Finished (took 102ms)
+20:24:07 Build Finished (took 93ms)
 

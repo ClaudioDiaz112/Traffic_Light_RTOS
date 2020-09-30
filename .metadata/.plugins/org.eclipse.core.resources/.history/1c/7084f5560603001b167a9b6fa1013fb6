@@ -33,7 +33,6 @@ typedef struct {
    msg_header_t hdr;  // Custom header
    int ClientID;      // our data (unique id from client)
    int data;          // our data <-- This is what we are here for
-
 } my_data;
 
 typedef struct {

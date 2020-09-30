@@ -6,7 +6,7 @@ void* Test(void);
 int main( void )
 {
 	pthread_t th1,th2;
-
+	pthread_attr_t attr;
 	pthread_create(&th1, NULL, Server, NULL);
 	pthread_create(&th2, NULL, Test, NULL);
 
