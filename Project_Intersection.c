@@ -180,6 +180,14 @@ void display_output(struct Intersection_Light_Outputs *Light_Output){
 	printf("		");
 	printf("West State = %d \n", Light_Output->west_Light);
 
+	printf("North left state = %d ", Light_Output->north_Left_Light);
+	printf("	");
+	printf("South left state = %d ", Light_Output->south_Left_Light);
+	printf("	");
+	printf("East left state = %d ", Light_Output->east_Left_Light);
+	printf("	");
+	printf("West left State = %d \n", Light_Output->west_Left_Light);
+
 	printf("North Peds State = %d ", Light_Output->north_Ped_Light);
 	printf("	");
 	printf("South Peds State = %d ", Light_Output->south_Ped_Light);
@@ -190,6 +198,9 @@ void display_output(struct Intersection_Light_Outputs *Light_Output){
 
 
 }
+
+
+
 //set light outputs to the corresponding state
 void state0_func(struct Intersection_Light_Outputs *Light_Output){
 		Light_Output->north_Light = RED;
